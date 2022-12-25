@@ -1,0 +1,35 @@
+.App {
+  padding: 5%;
+  > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 150px;
+    margin: 25px 0;
+    position: relative;
+    .result {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 20%;
+      height: 40%;
+      border: 1px solid black;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &.counter-component {
+      justify-content: space-between;
+      button {
+        width: 10%;
+        height: 40%;
+        border-radius: 10px;
+        border: 1px solid black;
+        font-size: 35px;
+      }
+    }
+  }
+}
